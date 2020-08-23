@@ -10,7 +10,7 @@
         body { font: 16px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; line-height: 24px; background: url(backgound\ green.jpg); }
         .clear { clear: both; }
         .page { width: 800px; margin: 50px auto 30px; }
-        .pic { float: right; margin: 48px 0 0 0; border-radius: 02%; }
+        .pic { float: right; margin: 48px 0 0 0; border-radius: 50%; }
         /*.name {<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">} */
         h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; text-align: center; font-size: 42px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;font-weight: bold; letter-spacing: -1px; border-bottom: 1px solid #999; }
         .about-me { text-align: center ;font-family: Georgia, Serif; font-style: italic; color: rgb(43, 41, 41); }
@@ -24,6 +24,7 @@
         dd { width: 600px; float: right; }        
         dd.clear { float: none; margin: 0; height: 15px; }
         .Cthulhu { width: 500px; margin: 0px auto 100px; align-content: center;}
+        .button {color: rgb(0, 61, 10);}
      </style>
 
 </head>
@@ -31,9 +32,9 @@
 <body>
     <div class="page">
 
-        <img src="t.jpeg" alt="Thays Costa's profile pic" width="150" class="pic" />
+        <img src="t.jpeg" alt="Thays Costa's profile pic" width="250" class="pic" />
     
-        <div class="name">               
+        <div id="name" class="name">               
             <h1>Márcia Thays Melo Costa</h1>        
             </div>
         
@@ -74,8 +75,8 @@
             <dt><a class="index">Index</a></dt>
             <dd>
                 <ol>
-                    <li><a class="link-index" href="#form"><b>Graduation</b></a></li>
-                    <li><a class="link-index" href="#habilidades"><b>Skills</b></a></li>
+                    <li><a class="link-index" href="#edu"><b>Education</b></a></li>
+                    <li><a class="link-index" href="#skills"><b>Skills</b></a></li>
                     <li><a class="link-index" href="#hobbies"><b>Hobbies</b></a></li>
                 </ol>
             </dd>
@@ -84,7 +85,7 @@
         <br>
         <br>
            
-            <dt><a class="edu">Education</a></dt>
+            <dt><a class="edu" id="edu">Education</a></dt>
             <dd>
                 <h3>Web Development Student</h3>
                 <p><strong>Institution:</strong> Trybe<br />
@@ -94,7 +95,7 @@
                 <p><strong>Institution:</strong> Universidade Federal do Piauí<br />
                     <strong>Conclusion:</strong> 2019</p>
             </dd>            
-            <dt id="education"></dt>
+            <dt></dt>
 
             <dd class="clear"></dd>
             <br>
@@ -115,7 +116,7 @@
                   
             <dd class="clear"></dd>
                         
-            <dt><a class="hobbies">Hobbies</a></dt>
+            <dt><a class="hobbies" id="hobbies">Hobbies</a></dt>
             <dd>
                 <ul>
                     <li>Books and Comicbooks &#x1F4D5 &#x1F4AD</li>	
@@ -127,9 +128,12 @@
         </dl>
         
         <div class="clear"></div>       
-        <br>
-     
+        <br>    
     </div>
+    <div class="button" <button align="center">
+        <a href="#name"><button align="center"><b>Back to top</b></button></a>
+    </div>
+    <br>
     <div align="center">
         <img class="Cthulhu" width="500" src="https://i.pinimg.com/originals/5a/27/a9/5a27a9f8956c2db690e3341708cb0b87.gif" alt="Cthulhu in the rain gif">
     </div>
