@@ -1,54 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
      <title>Web Portfolio</title>    
-     <style>       
-        a { color:#2E2E2E;}
+     
+     <style type="text/css">
+        * { margin: 0; padding: 0; }        
+        body { font: 16px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; line-height: 24px; background: url(backgound\ green.jpg); }
+        .clear { clear: both; }
+        .page { width: 800px; margin: 50px auto 30px; }
+        .pic { float: right; margin: 48px 0 0 0; border-radius: 02%; }
+        /*.name {<link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">} */
+        h1 { margin: 0 0 16px 0; padding: 0 0 16px 0; text-align: center; font-size: 42px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;font-weight: bold; letter-spacing: -1px; border-bottom: 1px solid #999; }
+        .about-me { text-align: center ;font-family: Georgia, Serif; font-style: italic; color: rgb(43, 41, 41); }
+        .link-about-me { color: rgb(0, 61, 10); text-decoration: none; border-bottom: 1px dotted rgb(0, 61, 10); }
+        .link-index {color: rgb(0, 0, 0); text-decoration: none; border-bottom: 1px dotted rgb(0, 0, 0);}
+        .email {font-style:italic; text-align: center; margin: 0 0 16px 0; }
+        .icons {text-align:center;}        
+        ul { margin: 0 0 32px 17px; }             
+        dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 75px; border-right: 1px solid rgb(43, 41, 41);  }        
+        .hobbies {font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid rgb(43, 41, 41);  }        
+        dd { width: 600px; float: right; }        
+        dd.clear { float: none; margin: 0; height: 15px; }
+        .Cthulhu { width: 500px; margin: 0px auto 100px; align-content: center;}
      </style>
+
 </head>
 
 <body>
-    <div id="page-wrap">
+    <div class="page">
 
-        <img src="t.jpeg" alt="Thays Costa's profile pic" width="150" id="pic" />
+        <img src="t.jpeg" alt="Thays Costa's profile pic" width="150" class="pic" />
     
-        <div id="contact-info">               
+        <div class="name">               
             <h1>Márcia Thays Melo Costa</h1>        
             </div>
-                
-        <div id="about-me">
-            <p>Email: <strong>thayscosta3@gmail.com</strong></p>
-            <p>
-                I am the woman in <a href="#pic"><i>this</i></a> picture. <strong>Brazilian</strong>, born in Ceará, but <strong>living in Teresina, Piauí.</strong><br>
+        
+        <div >
+           
+            <p class="email">Email: <strong>thayscosta3@gmail.com</strong></p>
+            <p class="about-me">
+                I am the woman in <a class='link-about-me' href="#pic"><i>this</i></a> picture. <strong>Brazilian</strong>, born in Ceará, but <strong>living in Teresina, Piauí.</strong><br>
                 I have a bachelor degree in Accountant Science and currently I'm studying web development at Trybe. <br>
-                In my free time, I love to read and write about books <a target="_blank" href="https://quintacapa.com.br/"><i>here</i></a>, watch movies or series and listen to music, specially heavy metal and it's subgenres.&#x1F918 <br>
-                You can find me on LinkedIn <a target="_blank" href="https://www.linkedin.com/in/m-thays-costa/"><i>here</i></a> and see my projects on Github <a target="_blank" href="https://github.com/thayscosta3"><i>here</i></a>. <br>                
+                In my free time, I love to read and write about books <a class='link-about-me' target="_blank" href="https://quintacapa.com.br/"><i>here</i></a>, watch movies or series and listen to music, specially heavy metal and it's subgenres.&#x1F918 <br>
+                You can find me on social media or see my projects on Github in the links below! <br><br> 
             </p>
-            <hr>
+
+            <p class="icons">
+                                    
+                    <a target="_blank" href="https://www.linkedin.com/in/m-thays-costa/">
+                    <img align="center" alt="LinkedIN" width="32px" src="https://image.flaticon.com/icons/svg/1384/1384014.svg"/></a>
+                  
+                    <a target="_blank" href="https://www.instagram.com/missentropia_/?hl=pt-br">
+                    <img align="center" alt="Instagram" width="32px" src="https://image.flaticon.com/icons/svg/1384/1384015.svg"/></a>
+                  
+                    <a target="_blank" href="https://open.spotify.com/user/12173725478">
+                    <img align="center" alt="Spotify" width="32px" src="https://image.flaticon.com/icons/svg/49/49097.svg"/></a>
+                  
+                    <a target="_blank" href="mailto:thayscosta3@gmail.com">
+                    <img align="center" alt="E-mail" width="32px" src="https://image.flaticon.com/icons/svg/95/95627.svg"/></a>
+                    
+                    <a target="_blank" href="https://github.com/thayscosta3"><img align="center" alt="GitHub" width="32px" src="https://image.flaticon.com/icons/svg/733/733609.svg"/></a>
+                <br><br>
+            </p>
         </div>
 
+        <hr>
+
         <br>
-        
-        <dl>
+                
             <dd class="clear"></dd>
-            
-            <dt><a id="index">Index</a></dt>
+            <dt><a class="index">Index</a></dt>
             <dd>
                 <ol>
-                    <li><a href="#form">Graduation</a></li>
-                    <li><a href="#habilidades">Skills</a></li>
-                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a class="link-index" href="#form"><b>Graduation</b></a></li>
+                    <li><a class="link-index" href="#habilidades"><b>Skills</b></a></li>
+                    <li><a class="link-index" href="#hobbies"><b>Hobbies</b></a></li>
                 </ol>
             </dd>
-        </dl>
         
         <div class="clear"></div>        
         <br>
         <br>
            
-            <dt><a id="edu">Education</a></dt>
+            <dt><a class="edu">Education</a></dt>
             <dd>
                 <h3>Web Development Student</h3>
                 <p><strong>Institution:</strong> Trybe<br />
@@ -62,9 +98,9 @@
 
             <dd class="clear"></dd>
             <br>
-            <br>
 
-            <dt id="Skills"><a name=#a2">Skills</a></dt>
+
+            <dt id="Skills"><a name="#a2">Skills</a></dt>
             <dd>
                 <ul>
                     <li><h4>Organization</h4></li>
@@ -78,40 +114,25 @@
                 <dt></dt>           
                   
             <dd class="clear"></dd>
-            <br>
-            <br>
-            
-            <dt><a id="hobbies">Hobbies</a></dt>
+                        
+            <dt><a class="hobbies">Hobbies</a></dt>
             <dd>
                 <ul>
                     <li>Books and Comicbooks &#x1F4D5 &#x1F4AD</li>	
                     <li>Listen to Music <i>(Headbanger alert!)</i>&#x1F918 &#x1F3B6</li>
                     <li>Podcasts &#x1F3A7</li>
-                    <li>Watch Movies anda Series &#x1F4FA</li>
+                    <li>Watch Movies and Series &#x1F4FA</li>
                 </ul>
             </dd>
         </dl>
         
-        <div class="clear"></div>
+        <div class="clear"></div>       
         <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-    
+     
     </div>
-
+    <div align="center">
+        <img class="Cthulhu" width="500" src="https://i.pinimg.com/originals/5a/27/a9/5a27a9f8956c2db690e3341708cb0b87.gif" alt="Cthulhu in the rain gif">
+    </div>
 </body>
 
 </html>
